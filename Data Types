@@ -1,0 +1,7 @@
+i=int(input())
+d=float(input())
+h=str(input())
+print(i+int(d))
+print(d+d)
+print('HackerRank '+h)
+
