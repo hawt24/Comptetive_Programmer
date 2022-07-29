@@ -1,0 +1,6 @@
+if __name__ == '__main__':
+  N = int(input().strip())
+  if N%2!=0:
+        print("Weird")
+  if N%2==0:
+        print("Not Weird")
