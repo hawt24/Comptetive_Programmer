@@ -1,0 +1,22 @@
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        ans=0
+        start=0
+        curr=0
+        sub={}
+        for i,lett in enumerate(s):
+            if lett in sub and sub[lett]>=start:
+                start=sub[lett]+1
+                curr=i-sub[lett]
+                sub[lett]=i
+            else:
+                sub[lett]=i
+                curr += 1
+                if curr>ans:
+                    ans=curr
+        return ans
+                    
+                    
+                
+                
+            
